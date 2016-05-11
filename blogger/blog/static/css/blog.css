@@ -1,0 +1,37 @@
+.tivix-blog {
+	background-color: #FAFAFA;
+}
+
+.tivix-blog .container {
+	margin-left: 0px;
+}
+
+.tivix-blog .navbar {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+	background-color: #FFFFFF;
+}
+
+.tivix-blog .navbar .navbar-header { 
+	width: 100%;
+}
+
+.tivix-blog .navbar .navbar-header span { 
+	margin-right: 5px;
+}
+
+.tivix-blog .tivix-list h3 {
+	word-wrap: break-word;
+}
+
+.tivix-blog .tivix-list .detail-link:hover {
+	color: #990000;
+	text-decoration: none;
+}
+
+.tivix-blog .tivix-detail h1, p {
+	word-wrap: break-word;
+}
+
+.tivix-blog .tivix-detail span {
+	margin-right: 5px;
+}

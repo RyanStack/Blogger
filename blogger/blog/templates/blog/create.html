@@ -1,0 +1,13 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}	
+	<h1>Create a new post!</h1>
+
+	{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+	<form action="{% url 'blog:create' %}" method="post">
+		{% csrf_token %}
+	    {{ form }}
+		<input type="submit" value="Submit" />
+	</form>
+{% endblock %}

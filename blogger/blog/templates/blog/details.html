@@ -1,0 +1,22 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}	
+	<div class="col-md-6 tivix-detail">
+		<div class="thumbnail">
+			<div class="caption">
+				<h1>{{ post.title }}</h1>
+				<p>{{ post.description }}</p>
+				<p>{{ post.created_date }}</p>
+				<div class="btn-group">
+				  <a href="{% url 'blog:update' post.id %}" type="button" class="btn btn-default">
+				  	<span class="glyphicon glyphicon-pencil"></span>Edit
+				  </a>
+				  <a href="{% url 'blog:delete' post.id %}" type="button" class="btn btn-default">
+				  	<span class="glyphicon glyphicon-remove"></span>Delete
+				  </a>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+

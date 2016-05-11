@@ -1,0 +1,5 @@
+*.pyc
+__pycache__
+myvenv
+blogger/db.sqlite3
+.DS_Store

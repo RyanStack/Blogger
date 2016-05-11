@@ -1,0 +1,28 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+{% if latest_post_list %}
+	{% for post in latest_post_list %}
+	<div class="row">
+		<div class="col-md-12 tivix-list">
+			<div class="thumbnail">
+				<div class="caption">
+					<h3><a class="detail-link" href="{% url 'blog:details' post.id %}">{{ post.title }}</a></h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+{% else %}
+	<p>No posts are available.</p>
+{% endif %}
+{% endblock %}
+
+
+<!-- 
+
+<ul>
+	{% for post in latest_post_list %}
+	<li><a href="{% url 'blog:details' post.id %}">{{ post.title }}</a></li>
+	{% endfor %}
+</ul> -->
