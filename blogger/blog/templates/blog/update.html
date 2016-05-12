@@ -1,14 +1,14 @@
 {% extends 'blog/base.html' %}
 {% block content %}	
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
-<div class="col-md-6 tivix-create">
+<div class="col-md-6 tivix-forms">
 	<div class="thumbnail">
 		<div class="caption">
 			<h1>Update Post!</h1>
 			<form action="{% url 'blog:update' post.id %}" method="post">
 				{% csrf_token %}
 				{{ form.as_p }}
-				<input type="submit" value="Update" />
+				<input class="btn btn-primary" type="submit" value="Update" />
 			</form>	
 		</div>
 	</div>

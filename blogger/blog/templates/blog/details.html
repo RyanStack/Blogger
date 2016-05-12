@@ -8,10 +8,10 @@
 				<p>{{ post.description }}</p>
 				<p>{{ post.created_date }}</p>
 				<div class="btn-group">
-				  <a href="{% url 'blog:update' post.id %}" type="button" class="btn btn-default">
+				  <a href="{% url 'blog:update' post.id %}" type="button" class="btn btn-primary">
 				  	<span class="glyphicon glyphicon-pencil"></span>Edit
 				  </a>
-				  <a href="{% url 'blog:delete' post.id %}" type="button" class="btn btn-default">
+				  <a href="{% url 'blog:delete' post.id %}" type="button" class="btn btn-danger">
 				  	<span class="glyphicon glyphicon-remove"></span>Delete
 				  </a>
 				</div>

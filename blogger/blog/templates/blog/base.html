@@ -6,9 +6,6 @@
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body class="tivix-blog">
-        <!-- <div class="page-header">
-            <h1><a href="/">Tivix Blogger</a></h1>
-        </div> -->
         <!-- Navigation bar -->
         <nav class="navbar">
 		  <div class="container-fluid">
@@ -16,13 +13,13 @@
 		      	<a class="navbar-brand" href="{% url 'blog:list' %}">
 		        	<span class="glyphicon glyphicon-home"></span> Tivix Blogger
 		      	</a>
-		      	<a href="{% url 'blog:create' %}" type="button" class="btn btn-default navbar-btn pull-right">
+		      	<a href="{% url 'blog:create' %}" type="button" class="btn btn-success navbar-btn pull-right">
 			    	<span class="glyphicon glyphicon-plus"></span>Post
 				</a>
 		    </div>
 		  </div>
 		</nav>
-
+		<!-- Main content  -->
         <div class="content container">       
             {% block content %}
            	{% endblock %}    
