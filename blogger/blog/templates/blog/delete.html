@@ -1,13 +1,18 @@
 {% extends 'blog/base.html' %}
-
 {% block content %}	
-	<h1>Delete Post!</h1>
-
-	{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
-
-	<form action="{% url 'blog:delete' post.id %}" method="post">
-		{% csrf_token %}
-	    <p>Are you sure you want to delete "{{ object }}"?</p>
-	    <input type="submit" value="Confirm" />
-	</form>
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+<div class="col-md-6 tivix-detail">
+	<div class="thumbnail">
+		<div class="caption">
+			<h1>Delete Post!</h1>
+			<form action="{% url 'blog:delete' post.id %}" method="post">
+				{% csrf_token %}
+				<p>Are you sure you want to delete "{{ object }}"?</p>
+				<input type="submit" value="Confirm" />
+			</form>
+		</div>
+	</div>
+</div>
 {% endblock %}
+
+

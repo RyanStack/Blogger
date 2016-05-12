@@ -1,3 +1,13 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.tivix-blog .thumbnail {
+	transition: none;
+	border: 1px solid #DFDFDF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.12);
+}
+
 .tivix-blog {
 	background-color: #FAFAFA;
 }
@@ -21,6 +31,11 @@
 
 .tivix-blog .tivix-list h3 {
 	word-wrap: break-word;
+}
+
+.tivix-blog .tivix-list .detail-link {
+	color: #142c41;
+    font-size: 24px;xf
 }
 
 .tivix-blog .tivix-list .detail-link:hover {
