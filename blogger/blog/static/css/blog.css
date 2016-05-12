@@ -2,6 +2,10 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+.errorlist {
+	color: #DC7C7C;
+}
+
 .tivix-blog .thumbnail {
 	transition: none;
 	border: 1px solid #DFDFDF;
@@ -67,7 +71,7 @@ body {
 	resize: none;
 }
 
-.create-btn-patch {
+.tivix-forms .create-btn-patch {
 	margin-top: 10px;
 }
 

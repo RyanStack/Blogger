@@ -1,5 +1,4 @@
 {% extends 'blog/base.html' %}
-
 {% block content %}
 {% if latest_post_list %}
 	{% for post in latest_post_list %}
@@ -18,11 +17,3 @@
 {% endif %}
 {% endblock %}
 
-
-<!-- 
-
-<ul>
-	{% for post in latest_post_list %}
-	<li><a href="{% url 'blog:details' post.id %}">{{ post.title }}</a></li>
-	{% endfor %}
-</ul> -->
